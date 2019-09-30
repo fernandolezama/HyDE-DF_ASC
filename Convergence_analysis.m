@@ -36,7 +36,7 @@ for i=1:30
     Convergency(i,:,alg_test)=  ResDB(i).fitVector;
 end
 
-to_plot(alg_test,:)= sum(Convergency(:,:,alg_test));
+to_plot(alg_test,:)= mean(Convergency(:,:,alg_test));
 
 %% End of MH Optimization
 end
